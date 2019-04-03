@@ -73,6 +73,7 @@ article{
   display: inline-block;
   margin: 1px auto;
   vertical-align: top;
+  padding: 0px;
 }
 
 
@@ -88,7 +89,11 @@ p{
 .C_into{
 	font-family: 'Orbitron', sans-serif;
 	font-size: 15px;
-	padding-top: 1px;
+	padding-top: 10px;
+}
+.col-sm-4{
+	padding-right: 5px;
+	padding-left: 5px;
 }
 
 .C_name{
@@ -103,10 +108,12 @@ footer{
 	text-align: center;
 	padding-bottom: 20px;
 	padding-top : 20px;
-	font-size: 15px;
+	
 }
 
-
+.footer_font {
+	font-size: 15px;
+}
 
 .container {
 	width: 960px;
