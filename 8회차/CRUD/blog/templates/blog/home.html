@@ -1,0 +1,15 @@
+
+{% extends 'blog/layout.html' %}
+
+{% block content %}
+
+    {% for blog in blogs.all %}
+        <h1>{{ blog.donkey_title }}</h1>
+        <p>{{ blog.donkey_name }}</p>
+        <p>{{ blog.donkey_content }}</p>
+        <p>{{ blog.donkey_time }}</p>
+        <p>{{ blog.donkey_hits }}</p>
+        <a href="{%url 'edit' pk=blog.pk%}">수정</a>
+        <a href="{%url 'remove' pk=blog.pk%}">삭제</a>
+    {% endfor %}
+{% endblock %}

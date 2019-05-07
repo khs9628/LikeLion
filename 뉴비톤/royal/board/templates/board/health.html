@@ -1,0 +1,13 @@
+{% extends 'base.html' %}
+
+{% block contents %}
+ 
+      {% for health in healths.all %}
+          <div class="container">
+              <h1>{{health.title}}</h1>
+              <p>{{health.pub_date}}</p>
+              <p>{{health.summary}} <a href="{% url 'board:detail_health' health.id %}">자세히</a></p>
+          </div>
+      {%endfor%}          
+
+{% endblock %}

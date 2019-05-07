@@ -1,0 +1,144 @@
+{% load staticfiles %}
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <!-- Required meta tags -->
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    
+        <!-- Bootstrap CSS -->
+        <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+        <link href="{% static 'css/mypage.css' %}" rel="stylesheet">
+    
+        <title>수라상</title>
+    </head>
+
+    <body>
+        <nav class="navbar navbar-expand-lg navbar-dark bg-dark fixed-top">
+            <div class="container">
+                <img src = "{% static 'img/logob.jpg' %}" width="60px" height="60px">
+                    &nbsp; &nbsp;
+                <a class="navbar-brand" href="{% url 'index' %}">SURASANG</a>
+                <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarResponsive">
+                    <ul class="navbar-nav ml-auto">
+                        <li class="nav-item active">
+                            <a class="nav-link" href="{% url 'index' %}">Home
+                                <span class="sr-only">(current)</span>
+                            </a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="{% url 'about' %}">About</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">Services</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="{% url 'login' %}">LOGIN</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+    
+        <div clas="title">
+            <h1>My Page</h1>
+    
+            <!-- Optional JavaScript -->
+            <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+            <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+            <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+            <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+        </div>
+
+        <div class="content">
+            <div class="input-photo">
+                <div class="input-group-photo">
+                    <img src ="{% static 'img/4.jpg' %}" width =130px height = 130px>
+                </div>
+            </div>
+
+            <br>
+
+            <div class="input-id">
+                <div class="input-group-id">
+                    <p>ID</p>
+                    <input type="text" value="id" aria-label="ID" class="form-control">
+                </div>
+            </div>
+    
+            <br>
+    
+            <div class="input-password">
+                <div class="input-group-password">
+                    <p>PASSWORD</p>
+                    <input type="text" value="password" aria-label="PASSWORD" class="form-control">
+                </div>
+            </div>
+    
+            <br>
+    
+            <div class="name">
+                <div class="input-name">
+                    <div class="input-group-name">
+                        <p>NAME</p>
+                        <input type="text" value="name" aria-label="NAME" class="form-control">
+                    </div>
+                </div>
+            </div>
+    
+            <br>
+    
+            <div class="input-year">
+                <div class="input-group-year">
+                    <p>BORN YEAR</p>
+                    <input type="text" value="born year" aria-label="YEAR" class="form-control">
+                </div>
+            </div>
+    
+            <br>
+    
+            <div class="input-month">
+                <div class="input-group-month">
+                    <p>MONTH</p>
+                    <input type="text" value="month" aria-label="MONTH" class="form-control">
+                </div>
+            </div>
+    
+            <br>
+    
+            <div class="input-date">
+                <div class="input-group-date">
+                    <p>DATE</p>
+                    <input type="text" value="date" aria-label="DATE" class="form-control">
+                </div>
+            </div>
+    
+            <br>
+    
+            <div class="input-email">
+                <div class="input-group-eamil">
+                    <p>E-MAIL</p>
+                    <input type="text" value="e-mail" aria-label="EMAIL" class="form-control">
+                </div>
+            </div>
+
+            <br>
+            <div class="modify">
+                <input type="button" class="mod" value="수정">
+                <input type="button" class="cancel" value="취소">
+            </div>
+
+            <br><br>
+        </div>
+        
+    </body>
+    <footer class="py-5 bg-dark">
+        <div class="container">
+            <p class="m-0 text-center text-white">Copyright &copy; 수라상 2019</p>
+        </div>
+        <!-- /.container -->
+    </footer>
+</html>

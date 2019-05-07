@@ -1,0 +1,12 @@
+{% extends 'base.html' %}
+
+{% block contents %}
+ 
+          {% for aicohol in aicohols.all %}
+          <div class="container">
+              <h1>{{aicohol.title}}</h1>
+              <p>{{aicohol.pub_date}}</p>
+              <p>{{aicohol.summary}} <a href="{% url 'board:detail_aicohol' aicohol.id %}">자세히</a></p>
+          </div>
+      {%endfor%}          
+   {% endblock %}

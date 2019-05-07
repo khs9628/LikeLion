@@ -1,0 +1,35 @@
+@font-face { font-family: 'yg-jalnan'; src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_four@1.2/JalnanOTF00.woff') format('woff'); font-weight: normal; font-style: normal; }
+@font-face { font-family: 'GyeonggiBatang'; src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_one@1.0/GyeonggiBatang.woff') format('woff'); font-weight: normal; font-style: normal; }  
+
+h1,h2{
+	font-family: 'yg-jalnan';
+	color: skyblue;
+}
+
+li{
+	color: blue;
+	font-size: 30px;
+}
+
+h2,p{
+	text-align: center;
+	font-family: 'GyeonggiBatang';
+}
+section article{
+	display: inline;
+}
+
+article{
+	width: 90%;
+	height: auto;
+	margin: 20px 10px;
+	padding:20px;
+}
+.introduce{
+	margin: 30px;
+	padding: 20px;
+
+	height: 320px;
+	background-image: url('https://search.pstatic.net/common/?src=http%3A%2F%2Fcafefiles.naver.net%2FMjAxNzA5MDVfMjI3%2FMDAxNTA0NTk4Mzg3NTUy.ywWGCQsg4k7jG4mAEZt-tZC2aR9kuAh9rSsf6Gpxqakg.GiJ38ARN2GHQLlEeVh6wG3PtkmQ6SWoIPzhbHnTwwS0g.JPEG.pjw530%2F%25BB%25E7%25C0%25DA%25B9%25D0%25B8%25B2%25BF%25A1%25BC%25AD001.jpg&type=b400');
+	background-size: contain;
+}

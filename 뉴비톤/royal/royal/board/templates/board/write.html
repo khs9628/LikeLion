@@ -1,0 +1,98 @@
+{% load staticfiles %}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<!-- Required meta tags -->
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+	<!-- Bootstrap CSS -->
+	<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+	<link href="{% static css/write.css %}" rel="stylesheet">
+
+	<title>Surasang Write Page</title>
+</head>
+
+<body>
+	<nav class="navbar navbar-expand-lg navbar-dark bg-dark fixed-top">
+		<div class="container">
+			<a class="navbar-brand" href="#">Surasang</a>
+			<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
+				<span class="navbar-toggler-icon"></span>
+			</button>
+			<div class="collapse navbar-collapse" id="navbarResponsive">
+				<ul class="navbar-nav ml-auto">
+					<li class="nav-item active">
+					</li>
+					<li class="nav-item">
+						<a class="nav-link" href="#">HOME</a>
+					</li>
+					<li class="nav-item">
+						<a class="nav-link" href="#">ABOUT</a>
+					</li>
+					<li class="nav-item">
+						<a class="nav-link" href="#">MYPAGE</a>
+					</li>
+					<li class="nav-item">
+						<a class="nav-link" href="#">SIGNIN</a>
+					</li>
+				</ul>
+			</div>
+		</div>
+	</nav>
+
+	<h1>WRITE</h1>
+	
+	<div class="container1">
+		<ul class="nav">
+			<li class="nav-item">
+				<a class="nav-link active">NAGUI ></a>
+			</li>
+			<li class="nav-item">
+				<a class="nav-link active">건강식품 ></a>
+			</li>
+			<li class="nav-item">
+				<a class="nav-link active">글쓰기</a>
+			</li>
+		</ul>
+	</div>
+
+	<br><br><br>
+
+	<div class="container2">
+		<div class="input-title">
+			<div class="input-group-title">
+				<p>제목</p>
+				<input type="text" aria-label="TITLE" class="form-control">
+			</div>		
+		</div>
+
+		<br><br>
+
+		<div class="input-name">
+			<div class="input-group-name">
+				<p>이름</p>
+				<input type="text" aria-label="NAME" class="form-control">
+			</div>
+		</div>
+
+		<br><br>
+
+		<div class="textarea">
+			<div class="textarea_title">
+				<p>본문</p>
+
+			</div>
+		</div>
+
+
+	</div>
+
+	<textarea cols="100" rows="20">내용을 입력해주세요</textarea>
+	<div class="container3">
+		<button type="button" class="btn btn-outline-secondary">글쓰기</button>
+
+	</div>
+
+</body>
+</html>

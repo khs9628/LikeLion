@@ -1,0 +1,313 @@
+{% load staticfiles %}
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  <meta name="description" content="">
+  <meta name="author" content="">
+
+  <title>수라상</title>
+
+  <!-- Bootstrap core CSS -->
+  <link href="{% static 'vendor/bootstrap/css/bootstrap.min.css' %}" rel="stylesheet">
+  <!-- Custom styles for this template -->
+  <link href="{% static 'css/index.css' %}" rel="stylesheet">
+
+</head>
+
+<body>
+
+  <!-- Navigation -->
+  <nav class="navbar navbar-expand-lg navbar-dark bg-dark fixed-top">
+    <div class="container">
+      <img src = "{% static 'img/logob.jpg' %}" width="60px" height="60px">
+        &nbsp; &nbsp;
+        <a class="navbar-brand" href="{% url 'index' %}">수라상</a>
+        
+      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarResponsive">
+        <ul class="navbar-nav ml-auto">
+          <li class="nav-item active">
+            <a class="nav-link" href="{% url 'index' %}">Home
+              <span class="sr-only">(current)</span>
+            </a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="{% url 'about' %}">ABOUT</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="{% url 'mypage' %}">MYPAGE</a>
+          </li>
+          <li class="nav-item">
+            <!-- <a class="nav-link" href="#">LOGIN</a> -->
+            <!-- <button type="button" class="btn btn-outline-primary" href="#">LOGIN</button> -->
+            <div class="btn-group">
+  <button type="button" class="btn btn-outline-primary" href="{% url 'login' %}">LOGIN</button>
+  <button type="button" class="btn btn-outline-primary dropdown-toggle dropdown-toggle-split" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+    <span class="sr-only">Toggle Dropdown</span>
+  </button>
+  <div class="dropdown-menu">
+    <a class="outline-primary dropdown-item" href="{% url 'signin' %}">SIGN UP</a>
+  </div>
+</div>
+          </li>
+        </ul>
+      </div>
+    </div>
+    </nav>
+    
+  <!-- Bootstrap core CSS -->
+  <link href="{% static 'vendor/bootstrap/css/bootstrap.min.css' %}" rel="stylesheet">
+
+  <!-- Custom styles for this template -->
+  <link href="{% static 'css/recipe.css' %}" rel="stylesheet">
+
+</head>
+
+<body>
+
+  <!-- Navigation -->
+  <nav class="navbar navbar-expand-lg navbar-dark bg-dark fixed-top">
+    <div class="container">
+        <img src = "{% static 'img/logob.jpg' %}" width="60px" height="60px">
+        &nbsp; &nbsp;
+      <a class="navbar-brand" href="{% url 'index' %}">수라상</a>
+      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarResponsive">
+        <ul class="navbar-nav ml-auto">
+          <li class="nav-item active">
+            <a class="nav-link" href="{% url 'index' %}">Home
+              <span class="sr-only">(current)</span>
+            </a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#">ABOUT</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#">MYPAGE</a>
+          </li>
+          <li class="nav-item">
+            <!-- <a class="nav-link" href="#">LOGIN</a> -->
+            <!-- <button type="button" class="btn btn-outline-primary" href="#">LOGIN</button> -->
+            <div class="btn-group">
+  <button type="button" class="btn btn-outline-primary">LOGIN</button>
+  <button type="button" class="btn btn-outline-primary dropdown-toggle dropdown-toggle-split" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+    <span class="sr-only">Toggle Dropdown</span>
+  </button>
+  <div class="dropdown-menu">
+    <a class="outline-primary dropdown-item" href="file:///C:/Users/lisas/Desktop/%EB%89%B4%EB%B9%84%ED%86%A4/startbootstrap-shop-homepage-gh-pages/login.html">SIGN UP</a>
+  </div>
+</div>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+
+  <!-- Page Content -->
+  <div class="container">
+
+    <div class="row">
+
+      <div class="col-lg-3">
+
+        <img src="{% static 'img/logo2.png' %}" width="100%">
+        <div class="list-group">
+           <a href="file:///C:/Users/lisas/Desktop/뉴비톤/startbootstrap-shop-homepage-gh-pages/수라상_카테고리_들어가면.html" class="list-group-item">나귀</a>
+           <a href="#" class="list-group-item">ㄴ레시피</a>
+            <a href="file:///C:/Users/lisas/Desktop/%EB%89%B4%EB%B9%84%ED%86%A4/startbootstrap-shop-homepage-gh-pages/%EC%B6%94%EC%B2%9C%EC%95%BD.html#" class="list-group-item">ㄴ 건강식품</a>
+            <a href="#" class="list-group-item">ㄴ건강맛집</a>
+            <a href="#" class="list-group-item">ㄴ커뮤니티</a>
+          <a href="#" class="list-group-item">술나귀</a>
+           <a href="{% url 'recipe' %}" class="list-group-item">ㄴ레시피</a>
+            <a href="{% url 'health' }" class="list-group-item">ㄴ 건강식품</a>
+             <a href="#" class="list-group-item">ㄴ건강맛집</a>
+            <a href="#" class="list-group-item">ㄴ커뮤니티</a>
+
+          <a href="#" class="list-group-item">다이어트나귀</a>
+           <a href="#" class="list-group-item">ㄴ레시피</a>
+            <a href="file:///C:/Users/lisas/Desktop/%EB%89%B4%EB%B9%84%ED%86%A4/startbootstrap-shop-homepage-gh-pages/%EC%B6%94%EC%B2%9C%EC%95%BD.html#" class="list-group-item">ㄴ 건강식품</a>
+            <a href="#" class="list-group-item">ㄴ건강맛집</a>
+            <a href="#" class="list-group-item">ㄴ커뮤니티</a>
+          <a href="#" class="list-group-item">운동나귀</a>
+           <a href="#" class="list-group-item">ㄴ레시피</a>
+            <a href="file:///C:/Users/lisas/Desktop/%EB%89%B4%EB%B9%84%ED%86%A4/startbootstrap-shop-homepage-gh-pages/%EC%B6%94%EC%B2%9C%EC%95%BD.html#" class="list-group-item">ㄴ 건강식품</a>
+            <a href="#" class="list-group-item">ㄴ건강맛집</a>
+            <a href="#" class="list-group-item">ㄴ커뮤니티</a>
+          <a href="#" class="list-group-item">BEST나귀</a>
+        </div>
+
+      </div>
+      <!-- /.col-lg-3 -->
+
+      <!-- 광고카드 -->
+     
+      <div id="floatdiv">
+          <div class="card" style="width: 10rem; ">
+              <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9  GcSoZOZX_fKTAMrZQtwSA5b_4BZPP49viqxXVkMxDItWR9f0sb43eg" class="card-img-top" alt="...">
+          <div class="card-body">
+               <span class="badge badge-pill badge-danger">HOT</span><h5 class="card-title"> 이달의 추천</h5>
+               <p class="card-text">다이어트 보조제:grn+ 분홍이</p>
+                <a href="http://www.tgrn.co.kr/shop/shopdetail.html?branduid=941487" class="btn btn-primary">구매 사이트로</a>
+           </div>
+            </div>
+      </div>
+
+      <div class="col-lg-9">   <!-- 가이드라인 잡혀있음 -->
+        <img src="{% static 'img/logo4.jpg' %}"  class="all_n"> 
+
+
+
+        <div class="row">
+
+          <div class="col-lg-4 col-md-6 mb-4">
+           
+              <div id="g_size">   
+                  <div class="card" style="width: 18rem;" >
+                      <div class="img-box">
+                        <img src="{% static 'img/sr1.jpg' %}" alt="...">
+                      </div>
+                  <div class="card-body">
+                       <h5 class="card-title">과일화채</h5>
+                        <p class="card-text">과일 화채는 화채 속 과일에 수분이 많아 체내 알코올 농도를 묽게 해 덜 취할 수 있다. 또한 과일 화채는 짜거나 기름지지 않아 다른 안주에 비해 위장에 부담을 적게 준다.
+(수라상Tip! 수박 화채는 2인분 기준 한그릇 140kcal! 레몬즙을 넣어 주면 더욱 맛있고 건강해요~)</p>
+                        <a href="https://smartstore.naver.com/aghealth/products/2049558218?n_media=27758&n_query=%EB%88%88%EC%98%81%EC%96%91%EC%A0%9C%EC%B6%94%EC%B2%9C&n_rank=1&n_ad_group=grp-a001-02-000000003757651&n_ad=nad-a001-02-000000015413419&n_campaign_type=2&n_mall_pid=2049558218&NaPm=ct%3Djv9oejg8%7Cci%3D0zu0003FGGPqOXhdw0Zr%7Ctr%3Dpla%7Chk%3Ded523272899d3d32bc1e7330d38e6d56ad8973ff" class="btn btn-primary">자세히 보기</a>
+                  </div>
+                   </div>
+          </div>
+
+ 
+          </div>
+
+          <div class="col-lg-4 col-md-6 mb-4">
+            <div id="g_size">   
+                  <div class="card" style="width: 18rem;" >
+                      <div class="img-box">
+                        <img src="{% static 'img/sr2.jpg' %}" alt="...">
+                      </div>
+                  <div class="card-body">
+                       <h5 class="card-title">두부 김치</h5>
+                        <p class="card-text">두부는 100g당 79kcal! 건강안주
+두부 속 단백질은 위의 알코올을 흡수를 더디게 해 취기가 천천히 오르게 한다. 인체에 있는 체지방을 분해시켜주고 지방이 체내에 쌓이는걸 막아주는 효능이 있다. 또한 두부는 갱년기 증강 개선, 변비 및 장염개선, 치매예방, 항암효과, 동맹경화 예방 및 성장발육 등의 효능이 있다.</p>
+                        <a href="http://display.cjmall.com/p/item/48364803?1=1&nv_ad=pla&n_media=27758&n_query=%EC%A0%95%EA%B4%80%EC%9E%A5%ED%99%94%EC%95%A0%EB%9D%BD%EC%A7%84&n_rank=1&n_ad_group=grp-a001-02-000000001787940&n_ad=nad-a001-02-000000035116131&n_campaign_type=2&n_mall_pid=48364803&NaPm=ct=jv9or7gw%7Cci=0zK0000UHqPqlL1sgLma%7Ctr=pla%7Chk=404afe16f5b54ce9cefd3c231a35bd06bd90a308&BSCPN=NSM&BSPRG=NAVERSH&BSCCN1=SHOP
+                       " class="btn btn-primary">자세히 보기</a>
+                  </div>
+                   </div>
+          </div>
+          </div>
+
+          <div class="col-lg-4 col-md-6 mb-4">
+             <div id="g_size">   
+                  <div class="card" style="width: 18rem;" >
+                      <div class="img-box">
+                        <img src="{% static 'img/sr3.jpg' %}" class="card-img-top" alt="...">
+                      </div>
+                  <div class="card-body">
+                       <h5 class="card-title">마구이</h5> 
+                        <p class="card-text">마는 대장의 활동에 좋아서 대장암 예방에 효과가 있다. 마는 알로에보다 식이섬유가 4배나 많이 들어있어 변비에 정말 좋다. 허약체질, 만성피로에 시달리시는 분들에게 스테미너 향상에도 좋고 정력강화, 혈관건강, 호흡기질환개선에 뛰어난 효능이 있다.
+고 있다.
+(수라상Tip! 기호에 따라 참기름에 소금 약간 넣은 기름장이나 달콤한 꿀에 찍어 먹으면 더 맛있게 드실 수 있습니다.)</p>
+                        <a href="http://cr2.shopping.naver.com/adcrNoti.nhn?x=PJSt1CfnD%2BQhXs7PBgLF0v%2F%2F%2Fw%3D%3DslUJSk%2BXroTTvTsm9TZfFDKAFRj6n1dJoALGloqU2wkb3bV7wXpSXx6ntY12oGWty9RqFWEG6qtnzT73IgeeBkxDLEG0TP2HZ0PsCzoIErU8P7CmX6sDl9RDWRqQzH3%2Bflop5XLb3V3PvrSTdKU8t%2F2PDJ7jHdEredqo95pNerpaHBa%2B0dyRRyUpm8MMIx6ZXm0pV7LCRnx0JPASTRFh43iaz6RUlFd0GN9G0NRxNXNo8L9fyfkKC3xF2NqAoJ1hNTgyfYXIL2ek2o30IiCooXCuq2MB7z6dFe5lu%2FSsaQBepV2AcM6rRM241CAxNrAeO3zDLxa17J%2B7aP6cs8fWPhxUj5yhz0FJJQb2Wave5CtFZVmbgPQceBWpZlsOMZsj76g6VdQWKOvKVJGUb%2F02Jsn4e6VBw8jiWCIVv2tD3VWxA2on6S7Bq0n66C9q4UX00%2BBYxymq7g2VLr7uiEOQrPndY2%2FCr4B3ArVtNHcoMNPwpaix6nf3hGJZ3IK8rnUSdVZG4WGMTejF%2BMl4TKFbgEXREoLoqsknSaydyd8jRCpmlopbpieagPRoipJ%2FEZ19D31Aucnv4S11Fu7oNFDmdvbZWfP3DSAGS3Pe7Ye1Q%2B2q4z8mzpScWBo2kNMVXosdmLUOr2xypEW%2FQUQPGaW%2FluHWNc5xBx8gqtjYW8bS89KC2Cd42jl1bqKRp%2FDjrlHRDBpJ8%2BWrP2RXKIu9ySZ9yv2nbVGzNx2YHJLgC8XA9riFhQhW3J0%2FGTX0rIH15mwi9UkOwV6VEdyGoK8Ra2%2BtX4h%2B0O%2BBsEq1qiPBlYFd4LblrQIkoE238TBhbvEZfLsb075cCyXB%2BqogU%2BW%2BOTC81i5P0FAIsn%2BcHRLh4fZJYdGKphqx0%2BGKusHSpvcRtYH2KVf4Ez%2BJ%2FxgqA2eWB%2FuAF4j4RdimtqYyFwpFMf0n3J3XQCUjRooFgk8SZ0hlmcz5v&nv_mid=18802549098&cat_id=50002427
+" class="btn btn-primary">자세히 보기</a>
+                  </div>
+                   </div>
+          </div>
+          </div>
+
+          <div class="col-lg-4 col-md-6 mb-4">
+              <div id="g_size">   
+                  <div class="card" style="width: 18rem;" >
+                      <div class="img-box">
+                        <img src="{% static 'img/ss1.jpg' %}" class="card-img-top" alt="...">
+                      </div>
+                  <div class="card-body">
+                       <h5 class="card-title">육회</h5> 
+                        <p class="card-text">육회의 효능!
+철분이 다량 함유되어 빈혈에 좋다.
+비타민과 무기질 또한 풍부하여 피부 미용에 좋다.
+(수라상Tip! 같이 먹는 배는 알카리성 식품으로, 육회의 단백질을 분해하여 식감을 더 부드럽고 연하게 만들어준다.)
+</p>
+                        <a href="http://cr2.shopping.naver.com/adcrNoti.nhn?x=PJSt1CfnD%2BQhXs7PBgLF0v%2F%2F%2Fw%3D%3DslUJSk%2BXroTTvTsm9TZfFDKAFRj6n1dJoALGloqU2wkb3bV7wXpSXx6ntY12oGWty9RqFWEG6qtnzT73IgeeBkxDLEG0TP2HZ0PsCzoIErU8P7CmX6sDl9RDWRqQzH3%2Bflop5XLb3V3PvrSTdKU8t%2F2PDJ7jHdEredqo95pNerpaHBa%2B0dyRRyUpm8MMIx6ZXm0pV7LCRnx0JPASTRFh43iaz6RUlFd0GN9G0NRxNXNo8L9fyfkKC3xF2NqAoJ1hNTgyfYXIL2ek2o30IiCooXCuq2MB7z6dFe5lu%2FSsaQBepV2AcM6rRM241CAxNrAeO3zDLxa17J%2B7aP6cs8fWPhxUj5yhz0FJJQb2Wave5CtFZVmbgPQceBWpZlsOMZsj76g6VdQWKOvKVJGUb%2F02Jsn4e6VBw8jiWCIVv2tD3VWxA2on6S7Bq0n66C9q4UX00%2BBYxymq7g2VLr7uiEOQrPndY2%2FCr4B3ArVtNHcoMNPwpaix6nf3hGJZ3IK8rnUSdVZG4WGMTejF%2BMl4TKFbgEXREoLoqsknSaydyd8jRCpmlopbpieagPRoipJ%2FEZ19D31Aucnv4S11Fu7oNFDmdvbZWfP3DSAGS3Pe7Ye1Q%2B2q4z8mzpScWBo2kNMVXosdmLUOr2xypEW%2FQUQPGaW%2FluHWNc5xBx8gqtjYW8bS89KC2Cd42jl1bqKRp%2FDjrlHRDBpJ8%2BWrP2RXKIu9ySZ9yv2nbVGzNx2YHJLgC8XA9riFhQhW3J0%2FGTX0rIH15mwi9UkOwV6VEdyGoK8Ra2%2BtX4h%2B0O%2BBsEq1qiPBlYFd4LblrQIkoE238TBhbvEZfLsb075cCyXB%2BqogU%2BW%2BOTC81i5P0FAIsn%2BcHRLh4fZJYdGKphqx0%2BGKusHSpvcRtYH2KVf4Ez%2BJ%2FxgqA2eWB%2FuAF4j4RdimtqYyFwpFMf0n3J3XQCUjRooFgk8SZ0hlmcz5v&nv_mid=18802549098&cat_id=50002427
+" class="btn btn-primary">자세히 보기</a>
+                  </div>
+                   </div>
+          </div>
+          </div>
+
+          <div class="col-lg-4 col-md-6 mb-4">
+              <div id="g_size">   
+                  <div class="card" style="width: 18rem;" >
+                      <div class="img-box">
+                        <img src="{% static 'img/ss3.jpg' %}" alt="...">
+                      </div>
+                  <div class="card-body">
+                       <h5 class="card-title">연어회</h5> 
+                        <p class="card-text">연어 회는 100g 기준으로 보통 161kcal이다.
+연어 회의 효능. 비타민 B와 E가 풍부하고 오메가-3 지방산이 풍부해 혈액순환을 원활하게 한다. 피부미용, 다이어트, 성인병예방에도 효과가 있다.</p>
+                        <a href="http://cr2.shopping.naver.com/adcrNoti.nhn?x=PJSt1CfnD%2BQhXs7PBgLF0v%2F%2F%2Fw%3D%3DslUJSk%2BXroTTvTsm9TZfFDKAFRj6n1dJoALGloqU2wkb3bV7wXpSXx6ntY12oGWty9RqFWEG6qtnzT73IgeeBkxDLEG0TP2HZ0PsCzoIErU8P7CmX6sDl9RDWRqQzH3%2Bflop5XLb3V3PvrSTdKU8t%2F2PDJ7jHdEredqo95pNerpaHBa%2B0dyRRyUpm8MMIx6ZXm0pV7LCRnx0JPASTRFh43iaz6RUlFd0GN9G0NRxNXNo8L9fyfkKC3xF2NqAoJ1hNTgyfYXIL2ek2o30IiCooXCuq2MB7z6dFe5lu%2FSsaQBepV2AcM6rRM241CAxNrAeO3zDLxa17J%2B7aP6cs8fWPhxUj5yhz0FJJQb2Wave5CtFZVmbgPQceBWpZlsOMZsj76g6VdQWKOvKVJGUb%2F02Jsn4e6VBw8jiWCIVv2tD3VWxA2on6S7Bq0n66C9q4UX00%2BBYxymq7g2VLr7uiEOQrPndY2%2FCr4B3ArVtNHcoMNPwpaix6nf3hGJZ3IK8rnUSdVZG4WGMTejF%2BMl4TKFbgEXREoLoqsknSaydyd8jRCpmlopbpieagPRoipJ%2FEZ19D31Aucnv4S11Fu7oNFDmdvbZWfP3DSAGS3Pe7Ye1Q%2B2q4z8mzpScWBo2kNMVXosdmLUOr2xypEW%2FQUQPGaW%2FluHWNc5xBx8gqtjYW8bS89KC2Cd42jl1bqKRp%2FDjrlHRDBpJ8%2BWrP2RXKIu9ySZ9yv2nbVGzNx2YHJLgC8XA9riFhQhW3J0%2FGTX0rIH15mwi9UkOwV6VEdyGoK8Ra2%2BtX4h%2B0O%2BBsEq1qiPBlYFd4LblrQIkoE238TBhbvEZfLsb075cCyXB%2BqogU%2BW%2BOTC81i5P0FAIsn%2BcHRLh4fZJYdGKphqx0%2BGKusHSpvcRtYH2KVf4Ez%2BJ%2FxgqA2eWB%2FuAF4j4RdimtqYyFwpFMf0n3J3XQCUjRooFgk8SZ0hlmcz5v&nv_mid=18802549098&cat_id=50002427
+" class="btn btn-primary">자세히 보기</a>
+                  </div>
+                   </div>
+          </div>
+          </div>
+
+          <div class="col-lg-4 col-md-6 mb-4">
+              <div id="g_size">   
+                  <div class="card" style="width: 18rem;" >
+                      <div class="img-box">
+                        <img src="{% static 'img/df2.jpg' %}" class="card-img-top" alt="...">
+                      </div>
+                  <div class="card-body">
+                       <h5 class="card-title">참치두부스테이크</h5> 
+                        <p class="card-text">[요리방법]
+1. 양파,당근,대파를 잘게잘게 썰어 준비합니다(집에있는 다른야채 넣으셔도 됩니다)
+2. 두부는 잘게 으깨주신다음 면보를 이용해 물기를 쫙 짜주세요
+(TIP. 팬에 두부를 살짝 볶아주면 남은 수분이 날라갑니다)
+3. 참치도 최대한 기름이 남지않게 꾹꾹 눌러 제거해주세요
+4. 볼에 준비한 재료와 부침가루,달걀을 넣고 치대줍니다 (부침가루는 반죽상태에 따라 조절해주세요)
+5. 충분히 치댄 후 팬에 기름을 두르고 노릇하게 구워주세요
+
+</p>
+                        <a href="http://cr2.shopping.naver.com/adcrNoti.nhn?x=PJSt1CfnD%2BQhXs7PBgLF0v%2F%2F%2Fw%3D%3DslUJSk%2BXroTTvTsm9TZfFDKAFRj6n1dJoALGloqU2wkb3bV7wXpSXx6ntY12oGWty9RqFWEG6qtnzT73IgeeBkxDLEG0TP2HZ0PsCzoIErU8P7CmX6sDl9RDWRqQzH3%2Bflop5XLb3V3PvrSTdKU8t%2F2PDJ7jHdEredqo95pNerpaHBa%2B0dyRRyUpm8MMIx6ZXm0pV7LCRnx0JPASTRFh43iaz6RUlFd0GN9G0NRxNXNo8L9fyfkKC3xF2NqAoJ1hNTgyfYXIL2ek2o30IiCooXCuq2MB7z6dFe5lu%2FSsaQBepV2AcM6rRM241CAxNrAeO3zDLxa17J%2B7aP6cs8fWPhxUj5yhz0FJJQb2Wave5CtFZVmbgPQceBWpZlsOMZsj76g6VdQWKOvKVJGUb%2F02Jsn4e6VBw8jiWCIVv2tD3VWxA2on6S7Bq0n66C9q4UX00%2BBYxymq7g2VLr7uiEOQrPndY2%2FCr4B3ArVtNHcoMNPwpaix6nf3hGJZ3IK8rnUSdVZG4WGMTejF%2BMl4TKFbgEXREoLoqsknSaydyd8jRCpmlopbpieagPRoipJ%2FEZ19D31Aucnv4S11Fu7oNFDmdvbZWfP3DSAGS3Pe7Ye1Q%2B2q4z8mzpScWBo2kNMVXosdmLUOr2xypEW%2FQUQPGaW%2FluHWNc5xBx8gqtjYW8bS89KC2Cd42jl1bqKRp%2FDjrlHRDBpJ8%2BWrP2RXKIu9ySZ9yv2nbVGzNx2YHJLgC8XA9riFhQhW3J0%2FGTX0rIH15mwi9UkOwV6VEdyGoK8Ra2%2BtX4h%2B0O%2BBsEq1qiPBlYFd4LblrQIkoE238TBhbvEZfLsb075cCyXB%2BqogU%2BW%2BOTC81i5P0FAIsn%2BcHRLh4fZJYdGKphqx0%2BGKusHSpvcRtYH2KVf4Ez%2BJ%2FxgqA2eWB%2FuAF4j4RdimtqYyFwpFMf0n3J3XQCUjRooFgk8SZ0hlmcz5v&nv_mid=18802549098&cat_id=50002427
+" class="btn btn-primary">자세히 보기</a>
+                  </div>
+                   </div>
+          </div>
+          </div>
+
+        </div>
+        <!-- /.row -->
+
+      </div>
+      <!-- /.col-lg-9 -->
+
+    </div>
+    <!-- /.row -->
+
+  </div>
+  <!-- /.container -->
+
+  <!-- Footer -->
+  <footer class="py-5 bg-dark">
+    <div class="container">
+      <p class="m-0 text-center text-white">Copyright &copy; 수라상 2019</p>
+    </div>
+    <!-- /.container -->
+  </footer>
+
+  <!-- Bootstrap core JavaScript -->
+  <script src="{% static 'vendor/jquery/jquery.min.js' %}"></script>
+  <script src="{% static 'vendor/bootstrap/js/bootstrap.bundle.min.js' %}"></script>
+
+</body>
+
+</html>
+
+

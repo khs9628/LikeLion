@@ -1,0 +1,39 @@
+
+#floatdiv { position:fixed;
+ width:175px; 
+ display:inline-block; 
+ right:0px; /* 창에서 오른쪽 길이 */
+ top:10%; /* 창에서 위에서 부터의 높이 */ 
+ background-color: transparent; margin:0; } 
+
+
+
+
+body {
+  padding-top: 56px;
+}
+
+
+
+
+
+
+
+
+.all_n{
+	width: 855px;
+	height: 200px;
+	padding:10px 30px 20px 20px;
+
+}
+
+
+
+
+footer{
+	footer{
+	width:100%;
+	padding-top: 10px;
+	background-color: black;
+	margin-top: 20px;
+}

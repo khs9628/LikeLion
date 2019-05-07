@@ -1,0 +1,53 @@
+{% load staticfiles %}
+<html lang="en">
+
+<head>
+
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  <meta name="description" content="">
+  <meta name="author" content="">
+
+  <title>수라상</title>
+
+  <!-- Bootstrap core CSS -->
+  <link href="{% static 'vendor/bootstrap/css/bootstrap.min.css' %}" rel="stylesheet">
+  <!-- Custom styles for this template -->
+  <link href="{% static 'css/index.css' %}" rel="stylesheet">
+
+</head>
+<body>
+    
+    
+<br>
+<div class="container">
+	<form action="{% url 'board:create_home' %}">
+	  <h4>제목: </h4>
+	  <input type="text" name="title">
+      <br>
+      <h4>이름 : </h4>
+      <input type="text" name="name">
+      <br>
+	  <br>
+	  <h4>본문: </h4>
+	  <textarea cols=40 rows=10 name="body"></textarea>
+	  <br>
+	  <br>
+	  <input class="btn btn-dark" type="submit" value="제출하기">
+  </form>
+</div>
+    
+   <!-- Footer -->
+  <footer class="py-5 bg-dark">
+    <div class="container">
+      <p class="m-0 text-center text-white">Copyright &copy; 수라상 2019</p>
+    </div>
+    <!-- /.container -->
+  </footer>
+
+  <!-- Bootstrap core JavaScript -->
+  <script src="{% static 'vendor/jquery/jquery.min.js' %}"></script>
+  <script src="{% static 'vendor/bootstrap/js/bootstrap.bundle.min.js' %}"></script>
+   
+</body>
+</html>

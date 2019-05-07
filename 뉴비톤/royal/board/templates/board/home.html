@@ -1,0 +1,14 @@
+{% extends 'base.html' %}
+
+{% block contents %}
+ 
+        
+    {% for donkey in donkeys.all %}
+        <div class="container">
+            <h1>{{donkey.title}}</h1>
+            <p>{{donkey.pub_date}}</p>
+            <p>{{donkey.summary}} <a href="{% url 'board:detail_home' donkey.id %}">μμΈν</a></p>
+        </div>
+    {%endfor%}          
+
+{% endblock %}
